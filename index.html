@@ -3,40 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio | Cecília - Desenvolvedora Front-end</title>
+    <title>Maria Cecília // Front-end Developer</title>
     
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&family=Space+Grotesk:wght@300;400;600;700&display=swap" rel="stylesheet">
     
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     
-    <!-- Estilo CSS Interno/Externo -->
-    
+    <!-- Estilo CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Cabeçalho / Navegação -->
+    <!-- Cabeçalho / Navegação Estilo Terminal -->
     <header class="cabecalho">
         <nav class="navegacao container">
-            <a href="#" class="logotipo">Cecília<span>.dev</span></a>
+            <a href="#inicio" class="logotipo">
+                <span class="prompt-sign">></span> cecilia<span class="ponto">.dev</span><span class="cursor-blinking">_</span>
+            </a>
             
             <div class="menu-navegacao" id="menu-navegacao">
                 <ul class="lista-navegacao">
-                    <li><a href="#inicio" class="link-menu">Início</a></li>
-                    <li><a href="#sobre" class="link-menu">Sobre Mim</a></li>
-                    <li><a href="#formacao" class="link-menu">Formação</a></li>
-                    <li><a href="#projetos" class="link-menu">Projetos</a></li>
-                    <li><a href="#contato" class="link-menu">Contato</a></li>
+                    <li><a href="#inicio" class="link-menu"><span class="nav-num"></span> início</a></li>
+                    <li><a href="#sobre" class="link-menu"><span class="nav-num"></span> sobre</a></li>
+                    <li><a href="#formacao" class="link-menu"><span class="nav-num"></span> formação</a></li>
+                    <li><a href="#projetos" class="link-menu"><span class="nav-num"></span> projetos</a></li>
+                    <li><a href="#contato" class="link-menu"><span class="nav-num"></span> contato</a></li>
                 </ul>
             </div>
 
             <div class="acoes-cabecalho">
                 <button id="botao-tema" class="botao-tema" aria-label="Alternar tema de cores">
-                    <i class="bi bi-moon-stars-fill"></i>
+                    <i class="bi bi-terminal-fill"></i>
                 </button>
                 <button id="botao-menu-mobile" class="botao-menu-mobile" aria-label="Abrir menu">
                     <i class="bi bi-list"></i>
@@ -49,36 +50,46 @@
         <!-- Seção Hero / Apresentação -->
         <section id="inicio" class="secao-hero container">
             <div class="conteudo-hero">
-                <span class="tag-boas-vindas">Bem-vindo(a) ao meu portfólio</span>
-                <h1 class="titulo-principal">Olá, eu sou a Maria Cecília</h1>
-                <h2 class="subtitulo-maquina-escrever"><span id="texto-digitado"></span><span class="cursor-pisca">|</span></h2>
+                <div class="terminal-badge">
+                    <span class="dot-red"></span>
+                    <span class="dot-yellow"></span>
+                    <span class="dot-green"></span>
+                    <span class="badge-text">status: disponivel_para_oportunidades</span>
+                </div>
+                <h1 class="titulo-principal">Maria Cecília</h1>
+                <h2 class="subtitulo-maquina-escrever">
+                    <span class="prefixo-code">&lt;</span><span id="texto-digitado">Desenvolvedora Front-end</span><span class="prefixo-code">&gt;</span><span class="cursor-pisca">|</span>
+                </h2>
                 <p class="descricao-hero">
-                    Estudante do 1º ano do Ensino Médio Técnico em Informática para Internet pela <strong>SESC Escola em parceria com o SENAC</strong>. Apaixonada por criar interfaces encantadoras, modernas e funcionais.
+                    Estudante do 1º ano do Ensino Médio Técnico em Informática para Internet pela <strong>SESC Escola em parceria com o SENAC</strong>. Transformando linhas de código em interfaces digitais marcantes.
                 </p>
                 <div class="botoes-hero">
                     <a href="curriculo.pdf" download="curriculo.pdf" class="botao-primario">
-                        <i class="bi bi-chat-heart-fill"></i> Baixar meu CV
+                        <i class="bi bi-file-earmark-code-fill"></i> Baixar CV
                     </a>
                     <a href="#contato" class="botao-secundario">
-                        <i class="bi bi-chat-heart-fill"></i> Vamos Conversar
+                        <i class="bi bi-terminal"></i> Vamos Conversar
                     </a>
                 </div>
             </div>
         </section>
 
         <!-- Seção Sobre Mim -->
-        <section id="sobre" class="secao-sobre container secao-oculta">
-            <h2 class="titulo-secao">Sobre Mim</h2>
+        <section id="sobre" class="secao-sobre container">
+            <div class="cabecalho-bloco">
+                <span class="secao-numero"></span>
+                <h2 class="titulo-secao">Sobre Mim</h2>
+            </div>
             <div class="card-sobre">
                 <p>
                     Sou estudante do 1º ano do Ensino Médio Técnico em Informática para Internet pela <strong>SESC Escola</strong>, em parceria com o <strong>SENAC</strong>. Com forte foco em programação, iniciei minha trilha de aprendizado me especializando em desenvolvimento <strong>Front-end</strong>.
                 </p>
                 <p>
-                    Nos próximos anos, minha formação se expandirá para o <strong>Back-end</strong> (2º ano) e desenvolvimento <strong>Mobile</strong> (3º ano), construindo uma base sólida para me tornar uma Desenvolvedora Full Stack. Sou apaixonada por criar interfaces interativas e busco minha primeira oportunidade na área de tecnologia.
+                    Nos próximos anos, minha formação se expandirá para o <strong>Back-end</strong> (2º ano) e desenvolvimento <strong>Mobile</strong> (3º ano), construindo uma base sólida para me tornar uma Desenvolvedora Full Stack criativa e analítica.
                 </p>
                 
                 <div class="container-habilidades">
-                    <h3 class="subtitulo-habilidades">Minhas Hard Skills</h3>
+                    <h3 class="subtitulo-habilidades">// Hard Skills & Tecnologias</h3>
                     <div class="grid-habilidades">
                         <div class="item-habilidade"><i class="bi bi-filetype-html"></i> HTML5</div>
                         <div class="item-habilidade"><i class="bi bi-filetype-css"></i> CSS3</div>
@@ -92,41 +103,43 @@
             </div>
         </section>
 
-        <!-- Seção Educação / Formação (Opção 3: UI/UX Clean com Glassmorphism) -->
-        <section id="formacao" class="secao-formacao container secao-oculta">
-            <h2 class="titulo-secao">Educação e Trilha Acadêmica</h2>
+        <!-- Seção Educação / Formação -->
+        <section id="formacao" class="secao-formacao container">
+            <div class="cabecalho-bloco">
+                <span class="secao-numero"></span>
+                <h2 class="titulo-secao">Trilha Acadêmica</h2>
+            </div>
             
             <div class="card-formacao-principal">
                 <div class="cabecalho-formacao">
                     <div class="selo-excelencia">
-                        <i class="bi bi-patch-check-fill"></i> Instituição de Excelência
+                        <i class="bi bi-patch-check-fill"></i> SESC Escola & SENAC (Previsão: 2026)
                     </div>
                     <h3>Técnico em Informática para Internet</h3>
-                    <h4>SESC ESCOLA & SENAC (Conclusão prevista: 2026)</h4>
                 </div>
 
                 <div class="grid-modulos-trilha">
                     <!-- Módulo 1 (Atual) -->
                     <div class="card-modulo modulo-ativo">
-                        <div class="status-modulo">1º Ano • Em Andamento ✨</div>
+                        <div class="status-modulo">[ 01_ANO // ATUAL ]</div>
                         <i class="bi bi-code-square icone-modulo"></i>
-                        <h5>Módulo 1: Front-end</h5>
+                        <h5>Front-end</h5>
                         <p>Foco em estrutura, estilização e interatividade com HTML5, CSS3 puro e JavaScript Vanilla.</p>
                     </div>
 
                     <!-- Módulo 2 -->
                     <div class="card-modulo">
-                        <div class="status-modulo">2º Ano • Próximo Passo</div>
+                        <div class="status-modulo">[ 02_ANO // PRÓXIMO ]</div>
                         <i class="bi bi-server icone-modulo"></i>
-                        <h5>Módulo 2: Back-end</h5>
+                        <h5>Back-end</h5>
                         <p>Desenvolvimento de servidores, banco de dados e APIs para suporte à lógica da aplicação.</p>
                     </div>
 
                     <!-- Módulo 3 -->
                     <div class="card-modulo">
-                        <div class="status-modulo">3º Ano • Futuro</div>
+                        <div class="status-modulo">[ 03_ANO // FUTURO ]</div>
                         <i class="bi bi-phone icone-modulo"></i>
-                        <h5>Módulo 3: Mobile</h5>
+                        <h5>Mobile</h5>
                         <p>Criação e publicação de aplicativos móveis nativos e híbridos para smartphones.</p>
                     </div>
                 </div>
@@ -134,11 +147,14 @@
         </section>
 
         <!-- Seção Projetos e Estudos -->
-        <section id="projetos" class="secao-projetos container secao-oculta">
-            <h2 class="titulo-secao">Meu Portfólio e Estudos</h2>
+        <section id="projetos" class="secao-projetos container">
+            <div class="cabecalho-bloco">
+                <span class="secao-numero"></span>
+                <h2 class="titulo-secao">Portfólio & Repositórios</h2>
+            </div>
 
             <!-- Subseção A: Projetos de Destaque -->
-            <h3 class="subtitulo-categoria"><i class="bi bi-star-fill"></i> Projetos de Destaque</h3>
+            <h3 class="subtitulo-categoria"><i class="bi bi-terminal-dash"></i> Projetos em Destaque</h3>
             <div class="grid-projetos-principais">
                 <!-- Projeto DevSetup -->
                 <article class="card-projeto">
@@ -153,9 +169,12 @@
                             <span>CSS3</span>
                             <span>JavaScript</span>
                         </div>
-                            <div class="botoes-card-projeto">
-                            <a href="https://github.com/mariaceciliaalencar21-creator/Projeto-devsetup" target="_blank" class="botao-card">
+                        <div class="grupo-botoes-card">
+                            <a href="https://github.com/mariaceciliaalencar21-creator/Projeto-devsetup" target="_blank" class="botao-card-secundario">
                                 <i class="bi bi-github"></i> Repositório
+                            </a>
+                            <a href="https://mariaceciliaalencar21-creator.github.io/Projeto-devsetup/" target="_blank" class="botao-card-primario">
+                                <i class="bi bi-box-arrow-up-right"></i> Visite o site
                             </a>
                         </div>
                     </div>
@@ -174,9 +193,12 @@
                             <span>CSS3</span>
                             <span>JavaScript</span>
                         </div>
-                        <div class="botoes-card-projeto">
-                            <a href="https://github.com/mariaceciliaalencar21-creator/compasso-musicall" target="_blank" class="botao-card">
+                        <div class="grupo-botoes-card">
+                            <a href="https://github.com/mariaceciliaalencar21-creator/compasso-musical" target="_blank" class="botao-card-secundario">
                                 <i class="bi bi-github"></i> Repositório
+                            </a>
+                            <a href="https://mariaceciliaalencar21-creator.github.io/compasso-musical/" target="_blank" class="botao-card-primario">
+                                <i class="bi bi-box-arrow-up-right"></i> Visite o site
                             </a>
                         </div>
                     </div>
@@ -184,43 +206,46 @@
             </div>
 
             <!-- Subseção B: Repositórios de Estudo -->
-            <h3 class="subtitulo-categoria"><i class="bi bi-journal-bookmark-fill"></i> Repositórios de Estudo</h3>
+            <h3 class="subtitulo-categoria"><i class="bi bi-folder2-open"></i> Repositórios de Estudo</h3>
             <div class="grid-repositorios-estudo">
                 <a href="https://github.com/mariaceciliaalencar21-creator/html" target="_blank" class="card-repositorio">
                     <i class="bi bi-filetype-html"></i>
                     <div>
-                        <h5>Trilha de HTML e CSS</h5>
-                        <p>Exercícios, estruturas semânticas e estilizações com CSS3.</p>
+                        <h5>Trilha HTML & CSS</h5>
+                        <p>Exercícios e estruturas semânticas avançadas.</p>
                     </div>
                 </a>
 
                 <a href="https://github.com/mariaceciliaalencar21-creator/JavaScript" target="_blank" class="card-repositorio">
                     <i class="bi bi-filetype-js"></i>
                     <div>
-                        <h5>Trilha de JavaScript Vanilla</h5>
-                        <p>Manipulação de DOM, funções, eventos e lógica prática.</p>
+                        <h5>JavaScript Vanilla</h5>
+                        <p>Manipulação de DOM e lógica prática.</p>
                     </div>
                 </a>
 
                 <a href="https://github.com/mariaceciliaalencar21-creator/algoritmos" target="_blank" class="card-repositorio">
                     <i class="bi bi-cpu"></i>
                     <div>
-                        <h5>Lógica de Programação e Algoritmos</h5>
-                        <p>Exercícios práticos de raciocínio lógico e estruturação.</p>
+                        <h5>Algoritmos</h5>
+                        <p>Resolução de problemas e raciocínio lógico.</p>
                     </div>
                 </a>
             </div>
         </section>
 
         <!-- Seção Contato -->
-        <section id="contato" class="secao-contato container secao-oculta">
-            <h2 class="titulo-secao">Vamos Conversar?</h2>
-            <p class="subtitulo-contato">Sinta-se à vontade para se conectar comigo através das redes abaixo:</p>
+        <section id="contato" class="secao-contato container">
+            <div class="cabecalho-bloco">
+                <span class="secao-numero"></span>
+                <h2 class="titulo-secao">Contato</h2>
+            </div>
+            <p class="subtitulo-contato">Abra um canal de comunicação direto comigo:</p>
 
             <div class="grid-cards-contato">
                 <!-- E-mail -->
                 <a href="mailto:mariaceciliaalencar21@gmail.com" class="card-contato email">
-                    <i class="bi bi-envelope-heart-fill"></i>
+                    <i class="bi bi-envelope-at-fill"></i>
                     <span>E-mail</span>
                     <small>mariaceciliaalencar21@gmail.com</small>
                 </a>
@@ -229,8 +254,9 @@
                 <a href="https://wa.me/5565999564321" target="_blank" class="card-contato whatsapp">
                     <i class="bi bi-whatsapp"></i>
                     <span>WhatsApp</span>
-                    <small>+55 65 999564321</small>
+                    <small>+55 65 99956-4321</small>
                 </a>
+                
                 <!-- GitHub -->
                 <a href="https://github.com/mariaceciliaalencar21" target="_blank" class="card-contato github">
                     <i class="bi bi-github"></i>
@@ -251,7 +277,7 @@
     <!-- Rodapé -->
     <footer class="rodape">
         <div class="container conteudo-rodape">
-            <p>Copyright © <span id="ano-atual"></span> • Desenvolvido com <i class="bi bi-heart-fill icone-coracao"></i> por <strong>Cecília</strong></p>
+            <p>// Design & Code by <strong>Maria Cecília</strong> • <span id="ano-atual"></span></p>
         </div>
     </footer>
 
